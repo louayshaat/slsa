@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'us-central1-docker.pkg.dev/core-demos/secure/slsa-check/secure', '.' ]
+options:
+  requestedVerifyOption: VERIFIED
+images:
+- 'us-central1-docker.pkg.dev/core-demos/secure/slsa-check/secure'
